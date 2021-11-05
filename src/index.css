@@ -11,3 +11,29 @@
 .nav-link{
   font-weight: 600;
 }
+
+.card{
+  max-width: 700px;
+  margin: 20px auto;
+}
+
+.card-header{
+  text-align: center;
+}
+
+.medium{
+  width: 45%;
+  float: left;
+}
+
+.medium_mr {
+  margin-right: 10%;
+}
+
+.pre-phone{
+    width: 15%;
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 0 !important;
+    margin-top: 32px;
+}
