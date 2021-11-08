@@ -1,5 +1,6 @@
 import React from 'react';
 import Input from './ui/form-elements/Input';
+import TextArea from './ui/form-elements/TextArea';
 import Boton from './ui/form-elements/Boton';
 import Card from './ui/Card';
 import Select from './ui/form-elements/Select';
@@ -61,7 +62,8 @@ const Direccion = () => {
                 />
                 {errors.house_number && errors.house_number}
                 <Select 
-                    name="pre-phone" 
+                    name="pre-phone"
+                    className="form-select" 
                     div="pre-phone"
                 >
                     <option value="+569">+569</option>
@@ -79,6 +81,8 @@ const Direccion = () => {
                 {errors.phone && errors.phone}
                 <Select 
                     name="region" 
+                    className="form-select"
+                    div="full-input"
                     onChange={handlerChange}
                     value={region}
                 >
@@ -89,6 +93,7 @@ const Direccion = () => {
                 {errors.region && errors.region}
                 <Select 
                     name="comuna" 
+                    className="form-select"
                     onChange={handlerChange}
                     value={comuna}
                 >
@@ -97,6 +102,11 @@ const Direccion = () => {
                     <option value="Las Condes">Las Condes</option>
                 </Select>
                 {errors.comuna && errors.comuna}
+                <TextArea 
+                    label="Observación de la dirección"
+                    class="md-textarea form-control" 
+                    rows="3"
+                />
                 <Boton 
                     title="Agregar una Dirección"
                     type="submit" 

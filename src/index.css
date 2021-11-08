@@ -31,9 +31,20 @@
 }
 
 .pre-phone{
-    width: 15%;
-    float: left;
-    margin-right: 5px;
-    margin-bottom: 0 !important;
-    margin-top: 32px;
+  width: 15%;
+  float: left;
+  margin-right: 5px;
+  margin-bottom: 0 !important;
+  margin-top: 32px;
+}
+
+input[type='checkbox']{
+  margin-left: 15px;
+  vertical-align: middle;
+  margin-top: -1px;
+}
+
+.full-input{
+  width: 100%;
+  overflow: hidden;
 }

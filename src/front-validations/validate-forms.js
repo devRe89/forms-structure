@@ -15,6 +15,9 @@ export default function validateFormInputs(inputs){
     if( ('email' in inputs) && (inputs.email === '' || !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(inputs.email)) ){
         errors.email = 'El Email es requerido o ingreso un mail no valido';
     } 
+    if( ('sex' in inputs) && inputs.sex === '' ) {
+        errors.sex = 'El sexo es requerido';
+    }
     if( ('street' in inputs) && inputs.street === '' ) {
         errors.street = 'EL nombre de la calle es requerido';
     }

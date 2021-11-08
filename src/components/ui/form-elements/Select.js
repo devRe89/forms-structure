@@ -5,7 +5,6 @@ const Select = ({name, div, children, ...rest}) => {
         <div className={`form-outline mb-4 ${div ? div :''}`}>
             <select 
                 name={name} 
-                className="form-select"
                 {...rest}
             >
                 {children}

@@ -16,9 +16,10 @@ const useValidatorFrom = (initialState, fn) => {
     }, [errors, submit, fn]);
     
     const handlerChange = e => {
+        console.log(e.target.type, e.target.value);
         setState({
             ...state,
-            [e.target.name]: e.target.value
+            [e.target.name]: e.target.type === 'checkbox' ? e.target.checked : e.target.value
         });
     }
     
