@@ -62,6 +62,7 @@ const Direccion = () => {
                 />
                 {errors.house_number && errors.house_number}
                 <Select 
+                    label="Teléfono"
                     name="pre-phone"
                     className="form-select" 
                     div="pre-phone"
@@ -70,7 +71,6 @@ const Direccion = () => {
                     <option value="+222">+222</option>
                 </Select>
                 <Input 
-                    label="Teléfono"
                     type="number"
                     name="phone"
                     div="medium"
